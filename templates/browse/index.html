@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Quotes List</h1>
+<ul>
+    <table class="table caption-top">
+        <thead>
+            <tr>
+                <th scope="col">text</th>
+                <th scope="col">tags</th>
+                <th scope="col">author</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for quote in quotes %}
+            <tr>
+                <td>{{ quote.text }}</td>
+                <td>{{ quote.tags }}</td>
+                <td>{{ quote.author }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</ul>
+
+{% endblock %}

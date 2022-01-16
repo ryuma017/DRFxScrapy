@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'browse/css/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <div class="container mt-5">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
