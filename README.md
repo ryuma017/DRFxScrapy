@@ -1,1 +1,1 @@
-# Django x scrapy test project
+# Example of Django Rest Flamework x Scrapy
